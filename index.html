@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+  <!-- Title on Tab -->
   <title>Anil Kumar Kanasani</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -29,93 +30,52 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Loading my content sections -->
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
     <script> 
     $(function(){
-      
+      $("#includedNavigationContent").load("sections/navigation_bar.html");
       $("#includedAboutContent").load("sections/about.html"); 
       $("#includedSkillsContent").load("sections/skills.html"); 
       $("#includedResumeContent").load("sections/resume.html"); 
       $("#includedPortfolioContent").load("sections/portfolio.html"); 
       $("#includedCertificationsContent").load("sections/certifications.html"); 
       $("#includedContactContent").load("sections/contact.html"); 
-      
+      $("#includeFooterContent").load("sections/footer.html");
     });
   </script>
 </head>
 
 <body>
-
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-
-      <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Anil kumar Kanasani</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a target="_blank" rel="noopener noreferrer" href="https://www.hackerrank.com/anilkumar_kanas1" class="hackerrank"><i class="bx bxs-quote-alt-right"></i></a>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.kaggle.com/anilkumarkanasani" class="kaggle"><i class="bx bx-link"></i></a>
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com/anilkumarKanasani" class="github"><i class="bx bxl-github"></i></a>
-          <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@anilkumar.kanasani" class="medium"><i class="bx bxl-medium"></i></a>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/anil-kumar-kanasani-846b2618a/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
+    <!-- Home Section-->
+    <section id="home" class="d-flex flex-column justify-content-center align-items-center">
+      <div class="home-container" data-aos="fade-in">
+        <h1>Anil kumar Kanasani</h1>
+        <p>Full stack data centric software Developer</p>
+        <p>I'm 
+          <span class="typed" data-typed-items="Data Scientist, 
+                                                Data Enginner, 
+                                                Data Analyst, 
+                                                ML Engineer, 
+                                                AI Engineer,
+                                                Freelancer">
+          </span>
+        </p>
       </div>
+    </section>
 
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-plus"></i> <span>Techinical Skills</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Time Line</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Certifications</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Anil kumar Kanasani</h1>
-      <p>Full stack data centric software Developer</p>
-      <p>I'm 
-        <span class="typed" data-typed-items="Data Scientist, 
-                                                   Data Enginner, 
-                                                   Data Analyst, 
-                                                   ML Engineer, 
-                                                   AI Engineer,
-                                                   Freelancer">
-        </span>
-      </p>
-    </div>
-  </section>
-
+  <!-- Including my content sections -->
+  
   <main id="main">
+    <div id="includedNavigationContent"></div>
     <div id="includedAboutContent"></div>
     <div id="includedSkillsContent"></div>
     <div id="includedResumeContent"></div>
     <div id="includedPortfolioContent"></div>
     <div id="includedCertificationsContent"></div>
     <div id="includedContactContent"></div>
+    <div id="includeFooterContent"></div>
   </main>
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        Reach me at :
-      </div>
-      <div class="credits">
-          <a href="mailto: anilkumar.kanasani@gmail.com">anilkumar.kanasani@gmail.com</a>
-      </div>
-    </div>
-  </footer>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

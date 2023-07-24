@@ -223,16 +223,16 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# home Section
 --------------------------------------------------------------*/
-#hero {
+#home {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/home-bg.jpg") top center;
   background-size: cover;
 }
 
-#hero:before {
+#home:before {
   content: "";
   background: rgba(5, 13, 24, 0.3);
   position: absolute;
@@ -243,13 +243,13 @@ h6 {
   z-index: 1;
 }
 
-#hero .hero-container {
+#home .home-container {
   position: relative;
   z-index: 2;
   min-width: 300px;
 }
 
-#hero h1 {
+#home h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
   font-weight: 700;
@@ -257,14 +257,14 @@ h6 {
   color: #fff;
 }
 
-#hero p {
+#home p {
   color: #fff;
   margin-bottom: 50px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
 
-#hero p span {
+#home p span {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
@@ -272,18 +272,18 @@ h6 {
 }
 
 @media (min-width: 1024px) {
-  #hero {
+  #home {
     background-attachment: fixed;
   }
 }
 
 @media (max-width: 768px) {
-  #hero h1 {
+  #home h1 {
     font-size: 28px;
     line-height: 36px;
   }
 
-  #hero h2 {
+  #home h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
@@ -417,7 +417,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -446,11 +446,32 @@ section {
   height: 10px;
 }
 
-.skills .progress-bar {
+.skills .skills-custom-full {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #149ddd;
+  background-color: green;
+}
+
+.skills .skills-custom-75 {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: gold;
+}
+
+.skills .skills-custom-50 {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: orange;
+}
+
+.skills .skills-custom-25 {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: red;
 }
 
 /*--------------------------------------------------------------
